@@ -1,11 +1,12 @@
 {
-    "name": "owp.http-download",
+    "name": "owp.http-get",
     "description": "Download responses from owp.http",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {},
     "keywords": [
         "download",
+        "get",
         "http",
         "owp.http",
         "Open Web Project",
@@ -13,13 +14,13 @@
     ],
     "author": "Andreas Arvidsson",
     "license": "MIT",
-    "homepage": "https://github.com/AndreasArvidsson/OpenWebProject-HTTP-download",
+    "homepage": "https://github.com/AndreasArvidsson/OpenWebProject-HTTP-get",
     "repository": {
         "type": "git",
-        "url": "https://github.com/AndreasArvidsson/OpenWebProject-HTTP-download.git"
+        "url": "https://github.com/AndreasArvidsson/OpenWebProject-HTTP-get.git"
     },
     "bugs": {
-        "url": "https://github.com/AndreasArvidsson/OpenWebProject-HTTP-download/issues"
+        "url": "https://github.com/AndreasArvidsson/OpenWebProject-HTTP-get/issues"
     },
     "dependencies": {
         "downloadjs": "^1.4.7"

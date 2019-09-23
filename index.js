@@ -4,7 +4,7 @@
  */
 import downloadjs from "downloadjs";
 
-const HttpDownload = (httpResponse) => {
+const HttpGet = (httpResponse) => {
     if (!httpResponse || typeof httpResponse.getHeader !== "function") {
         console.error("HttpDownload requires full response.");
         return;
@@ -15,4 +15,4 @@ const HttpDownload = (httpResponse) => {
     const filename = disposition.substring(i, disposition.length - 1);
     downloadjs(httpResponse.data, filename, type);
 };
-export default HttpDownload;
+export default HttpGet;
