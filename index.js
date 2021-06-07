@@ -1,18 +1,8 @@
 /**
  * @author Andreas Arvidsson
- * https://github.com/AndreasArvidsson/OpenWebProject-HTTP-download
+ * https://github.com/AndreasArvidsson/OpenWebProject-HTTP-get
  */
 import downloadjs from "downloadjs";
+import use from "owp.http/use";
 
-const HttpGet = (httpResponse) => {
-    if (!httpResponse || typeof httpResponse.getHeader !== "function") {
-        console.error("HttpDownload requires full response.");
-        return;
-    }
-    const type = httpResponse.getHeader("content-type");
-    const disposition = httpResponse.getHeader("content-disposition");
-    const i = disposition.indexOf("filename=") + "filename=".length + 1;
-    const filename = disposition.substring(i, disposition.length - 1);
-    downloadjs(httpResponse.data, filename, type);
-};
-export default HttpGet;
+use.downloadjs = downloadjs;
