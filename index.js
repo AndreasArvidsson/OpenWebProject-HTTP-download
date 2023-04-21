@@ -3,6 +3,6 @@
  * https://github.com/AndreasArvidsson/OpenWebProject-HTTP-get
  */
 import downloadjs from "downloadjs";
-import use from "owp.http/use";
+import { setDownloadjs } from "owp.http";
 
-use.downloadjs = downloadjs;
+setDownloadjs(downloadjs);

@@ -1,8 +1,9 @@
 {
     "name": "owp.http-get",
     "description": "Download responses from owp.http",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "main": "index.js",
+    "types": "index.d.ts",
     "scripts": {},
     "keywords": [
         "download",
@@ -23,7 +24,7 @@
         "url": "https://github.com/AndreasArvidsson/OpenWebProject-HTTP-get/issues"
     },
     "peerDependencies": {
-        "owp.http": ">=2.0.0"
+        "owp.http": ">=3.0.0"
     },
     "dependencies": {
         "downloadjs": "^1.4.7"
